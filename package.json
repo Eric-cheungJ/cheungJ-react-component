@@ -1,16 +1,16 @@
 {
-  "name": "cheungJ-react-components",
+  "name": "cheungj-react-components",
   "version": "0.0.1",
   "description": "A Design UI library for React",
   "main": "lib/index.js",
   "module": "exm/index.js",
-  "author": "cheungJ",
+  "author": "Eric-cheungJ",
   "license": "MIT",
   "files": [
     "esm",
     "lib"
   ],
-  "homepage": "https://github.com/chuengJ/react-components",
+  "homepage": "https://github.com/Eric-cheungJ/cheungJ-react-component",
   "dependencies": {
     "@svgr/webpack": "4.1.0",
     "babel-core": "7.0.0-bridge.0",

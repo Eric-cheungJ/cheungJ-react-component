@@ -1,0 +1,24 @@
+div, body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    height: 100vh;
+    text-align: center;
+}
+
+.description {
+    display: inline-block;
+    color: #33333d;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.description:before {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+}
