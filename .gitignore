@@ -9,6 +9,9 @@
 /esm
 /lib
 
+# document
+/.docz
+
 # testing
 /coverage
 

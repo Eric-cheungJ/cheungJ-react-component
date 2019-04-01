@@ -82,7 +82,9 @@
     "build:commonjs": "cross-env BABEL_OUTPUT=commonjs babel src/components --out-dir lib/ --ignore **/__tests__,**/__mocks__",
     "build:esm": "babel src/components --out-dir esm/ --ignore **/__tests__,**/__mocks__",
     "copy-css:esm": "cpx \"src/components/**/*.css\" esm",
-    "copy-css:lib": "cpx \"src/components/**/*.css\" lib"
+    "copy-css:lib": "cpx \"src/components/**/*.css\" lib",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -144,7 +146,11 @@
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
+    "@emotion/core": "^10.0.5",
     "cpx": "^1.5.0",
-    "cross-env": "^5.2.0"
+    "cross-env": "^5.2.0",
+    "docz": "^0.13.7",
+    "docz-plugin-css": "^0.11.0",
+    "docz-theme-default": "^1.0.0-rc.7"
   }
 }
