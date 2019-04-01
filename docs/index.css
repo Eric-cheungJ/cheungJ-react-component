@@ -22,3 +22,11 @@ div, body, html {
     height: 100%;
     vertical-align: middle;
 }
+
+.top-right {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    color: #33333d;
+    text-decoration: none;
+}
