@@ -151,6 +151,6 @@
     "cross-env": "^5.2.0",
     "docz": "^0.13.7",
     "docz-plugin-css": "^0.11.0",
-    "docz-theme-default": "^1.0.0-rc.7"
+    "docz-theme-default": "^0.13.7"
   }
 }
