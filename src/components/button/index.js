@@ -1,13 +1,40 @@
 import React from "react";
-import PropTypes from "prop-types";
-import "./index.css";
+import { Component } from "../libs";
 
-const Button = ({ text }) => (
-  <button className="btn">{text}</button>
-);
+export default class Button extends Component {
+  onClick = () => {
+    
+  }
 
-Button.propTypes = {
-  text: PropTypes.any
+  render() {
+    console.log(this.props.type)
+    return (
+      <button
+        style={this.style()}
+        className={this.className(
+          "el-button",
+          this.props.type && `el-button--${this.props.type}`,
+          this.props.size && `el-button--${this.props.size}`,
+          {
+            "is-disabled": this.props.disabled,
+            "is-loading": this.props.loading,
+            "is-plain": this.props.plain
+          }
+        )}
+        disabled={this.props.disabled}
+        type={this.props.nativeType}
+        onClick={this.onClick.bind(this)}
+      >
+        <span>{this.props.children}</span>
+      </button>
+    );
+  }
+}
+
+Button.defaultProps = {
+  type: "default",
+  nativeType: "button",
+  loading: false,
+  disabled: false,
+  plain: false
 };
-
-export default Button;
