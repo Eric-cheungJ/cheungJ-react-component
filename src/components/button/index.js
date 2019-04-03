@@ -2,12 +2,9 @@ import React from "react";
 import { Component } from "../libs";
 
 export default class Button extends Component {
-  onClick = () => {
-    
-  }
+  onClick = () => {};
 
   render() {
-    console.log(this.props.type)
     return (
       <button
         style={this.style()}
